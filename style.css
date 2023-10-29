@@ -39,6 +39,11 @@ div{
     background-position: center center;
     height: calc(100vh - 80px);
 }
+.parrafo-historia{
+    text-align: center;
+    font-size:medium;
+}
+
 .titulo{
     display: inline-block;
     vertical-align: top;
@@ -51,6 +56,22 @@ div p{
    padding: 5em 0;
    font-size: xx-large;
    color: #fff;
+}
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.column {
+	flex: 1;
+	border: 1px solid gray;
+	margin: 2px;
+	padding: 10px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+	
 }
 @media(max-width:991px){
     .menu{

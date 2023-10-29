@@ -4,35 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
     <title>Menu De Navegacion Responsive</title>
   </head>
   <body>
-    <nav>
+    <nav class="navbar navbar-dark bg-dark sticky-top">
       <a href="#" class="enlace">
-        <img src="images.jpg" alt="" class="logo" />
+        <img src="images.jpg" alt class="logo" />
         <h1 class="titulo">Estetica Steph</h1>
       </a>
-      <!-- Barra de navegacion con el menu de la pagina web--> 
+      <!-- Barra de navegacion con el menu de la pagina web-->
       <ul>
         <li><a href="#">Inicio</a></li>
-        <li><a href="#">Historia</a></li>
-        <li><a href="#">Servicio</a></li>
-        <li><a href="#">Producciones</a></li>
-        <li><a href="#">Turno</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#servicio">Servicio</a></li>
+        <li><a href="#producciones">Producciones</a></li>
+        <li><a href="#turno">Turno</a></li>
       </ul>
     </nav>
     <footer>
       <div>
         <!-- Descripcion de la pagina web-->
-      <p>
-        ¡Bienvenidos a Estetica Steph! En Estética Steph, estamos dedicados a
-        realzar tu belleza y resaltar tu confianza. Somos un oasis de bienestar
-        y cuidado personal, donde te invitamos a relajarte y renovarte. Nuestro
-        equipo de expertos en belleza y estética está aquí para ofrecerte una
-        experiencia única y personalizada que te hará sentir radiante tanto por
-        dentro como por fuera.
-      </p>
+        <p class="parrafo-historia">
+          ¡Bienvenidos a Estetica Steph! En Estética Steph, estamos dedicados a
+          realzar tu belleza y resaltar tu confianza. Somos un oasis de
+          bienestar
+          y cuidado personal, donde te invitamos a relajarte y renovarte.
+          Nuestro
+          equipo de expertos en belleza y estética está aquí para ofrecerte una
+          experiencia única y personalizada que te hará sentir radiante tanto
+          por
+          dentro como por fuera.
+        </p>
+      </div>
+      <div id="historia">
+        <!-- Historia de la pagina web-->
+        <p class="parrafo-historia">
+          Steph siempre había soñado con crear su propia estética, un lugar
+          donde la belleza y la confianza se fusionaran en armonía. Con un amor
+          innato por la moda y la estilización, había perfeccionado su talento a
+          lo largo de los años y había trabajado en varios salones de belleza y
+          spas. Sin embargo, sabía que su verdadera pasión estaba en crear su
+          propio espacio único.
+          <br>
+          Después de años de ahorro y planificación, finalmente decidió dar el
+          salto. Encontró el lugar perfecto en el corazón del centro de la
+          ciudad y lo transformó en su sueño hecho realidad: Steph, una estética
+          que se convertiría en un destino para quienes buscaban un toque de
+          elegancia y relajación en sus vidas ocupadas.
+          <br>
+          <br>Steph se centró en ofrecer una experiencia completa para sus
+          clientes.
+          Su estética era un oasis de calma y belleza, con una decoración
+          minimalista pero elegante que reflejaba su estilo personal. Los
+          colores suaves y la iluminación tenue crean un ambiente acogedor,
+          ideal para relajarse y consentirse.
+
+        </p>
+      </div>
+      <div id="servicio">
+        <!-- Servicio de la pagina web-->
+        <p class="parrafo-historia">
+          Nuestros servicios incluyen:
+          <br>
+          Cortes y peinados de última tendencia.
+          <br>
+          Tratamientos de coloración y resaltado.
+          <br>
+          Manicuras y pedicuras que te harán lucir impecable.
+          <br>
+          Masajes relajantes para liberar el estrés y revitalizar tu cuerpo.
+          <br>
+          Tratamientos faciales y corporales que cuidan y rejuvenecen tu piel.
+          <br>
+          Maquillaje profesional para ocasiones especiales o para resaltar tu
+          belleza cotidiana.
+        </p>
+      </div>
+      <section class="columns">
+        <div id="producciones" class="column">
+          <!-- Producciones de la pagina web-->
+          <p class="parrafo-producciones">
+          <img src="manicuria.jpg" alt="producciones">
+          </p>
+        </div>
+        <div id="producciones" class="column">
+          <!-- Producciones de la pagina web-->
+          <p class="parrafo-producciones">
+          <img src="masajes.jpg" alt="producciones">
+          </p>
+        </div>
+        <div id="producciones" class="column">
+          <!-- Producciones de la pagina web-->
+          <p class="parrafo-producciones">
+          <img src="cejas y pestañas.jpg" alt="producciones">
+          </p>
+        </div>
+    </section>
+    <div id="turnos">
+      <p class="parrafo-turnos">
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Nombre y Apellido</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <label for="exampleFormControlInput1">Telefono</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <label for="exampleFormControlTextarea1">Envia tu consulta</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </p>
+      </div>
+      </form>
     </div>
+
     </footer>
   </body>
 </html>
