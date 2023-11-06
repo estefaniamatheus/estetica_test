@@ -106,19 +106,24 @@
     </section>
     <div id="turnos">
       <p class="parrafo-turnos">
-      <form>
+      <form id="mi_formulario">
         <div class="form-group">
-          <label for="exampleFormControlInput1">Nombre y Apellido</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          <label for="exampleFormControlInput1">Telefono</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          <label for="exampleFormControlTextarea1">Envia tu consulta</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <label for="name">Nombre y Apellido</label>
+          <input type="text" name="name" class="form-control" id="name" autocomplete="given-name>
+          <label for="email">Email</label>
+          <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" autocomplete="given-email>
+          <label for="comentarios">Envia tu consulta</label>
+          <textarea class="form-control" name="comentarios" id="comentarios" rows="3"></textarea>
+          <input type="submit">enviar</input>
         </p>
       </div>
+      <a href="javascript:enviar_formulario()">Enviar formulario</a>
       </form>
+      
     </div>
 
     </footer>
+    
+  <script src="script.js"></script>
   </body>
 </html>
